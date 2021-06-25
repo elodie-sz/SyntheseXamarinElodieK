@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ExerciceSynthese.PageDetailTache">
+    <ContentPage.Content>
+        <StackLayout>
+            <Grid Padding="20" BackgroundColor="Black">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="Auto"/>
+                    <ColumnDefinition Width="*"/>
+                </Grid.ColumnDefinitions>
+                <ImageButton Source="retour.png" BackgroundColor="Transparent" x:Name="btnRetour" Clicked="btnRetour_Clicked" Grid.Column="0"/>
+                <ImageButton Source="valider.png" HorizontalOptions="End"  BackgroundColor="Transparent" x:Name="btnValider" Clicked="btnValider_Clicked" Grid.Column="1"/>
+            </Grid>
+
+
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                </Grid.RowDefinitions>
+                <DatePicker x:Name="Date" Grid.Row="1" Grid.Column="0"/>
+                <Entry x:Name="Title" Grid.Row="2" Grid.Column="0"/>
+                <Entry x:Name="Description" Grid.Row="3" Grid.Column="0"/>
+            </Grid>
+
+        </StackLayout>
+        
+    </ContentPage.Content>
+</ContentPage>
